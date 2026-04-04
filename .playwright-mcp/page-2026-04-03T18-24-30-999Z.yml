@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Log in" [ref=e5] [cursor=pointer]:
+          - /url: /login
+        - link "Sign up" [ref=e6] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - textbox [ref=e10]: My Test Note
+        - generic [ref=e11]:
+          - generic [ref=e12]: Saved
+          - button "Back to Dashboard" [ref=e13] [cursor=pointer]
+          - button "Delete" [ref=e14] [cursor=pointer]
+      - generic [ref=e15]:
+        - generic [ref=e16] [cursor=pointer]:
+          - switch [checked] [ref=e17]
+          - generic [ref=e19]: Public
+        - generic [ref=e20]:
+          - link "http://localhost:3000/p/WsdBQ33MUFCvzvcb" [ref=e21] [cursor=pointer]:
+            - /url: http://localhost:3000/p/WsdBQ33MUFCvzvcb
+          - button "Copy" [ref=e22] [cursor=pointer]
+      - generic [ref=e24] [cursor=pointer]:
+        - switch [ref=e25]
+        - generic [ref=e27]: Private

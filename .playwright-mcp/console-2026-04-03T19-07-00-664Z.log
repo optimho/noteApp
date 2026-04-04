@@ -1,0 +1,101 @@
+[   41061ms] [LOG] cbar_CP_start @ https://cloudfront.barilliance.com/jaycar.co.nz/cbar.js.php:239
+[   41062ms] [INFO] %cPersonalization by https://www.BARILLIANCE.com | For support email support@barilliance.com. Your site id is 7163161 color: green; font-weight: bold @ https://cloudfront.barilliance.com/jaycar.co.nz/cbar.js.php:4858
+[   41149ms] Error: Minified React error #425; visit https://reactjs.org/docs/error-decoder.html?invariant=425 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Af (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:40248)
+    at https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:103472
+    at Tk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:106208)
+    at Vk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99191)
+    at https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:98998
+    at Jk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99005)
+    at Hk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:94049)
+    at J (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1364)
+    at MessagePort.R (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1894)
+[   41149ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Eg (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:46546)
+    at x (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:121134)
+    at Vk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99131)
+    at https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:98998
+    at Jk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99005)
+    at Hk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:94049)
+    at J (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1364)
+    at MessagePort.R (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1894)
+[   41149ms] Error: Minified React error #418; visit https://reactjs.org/docs/error-decoder.html?invariant=418 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at Eg (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:46546)
+    at x (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:121134)
+    at Vk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99131)
+    at https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:98998
+    at Jk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99005)
+    at Hk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:94049)
+    at J (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1364)
+    at MessagePort.R (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1894)
+[   41149ms] Error: Minified React error #423; visit https://reactjs.org/docs/error-decoder.html?invariant=423 for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
+    at x (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:120803)
+    at Vk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99131)
+    at https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:98998
+    at Jk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:99005)
+    at Ok (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:95761)
+    at Hk (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:9:94317)
+    at J (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1364)
+    at MessagePort.R (https://www.jaycar.co.nz/_next/static/chunks/framework-acdd23eb235c0e7e.js:33:1894)
+[   41445ms] [INFO] retry: 0 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   41445ms] [INFO] render() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   41445ms] [INFO] renderProductBanner() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   41445ms] [INFO] price breakdown not rendered as price is under $600 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   41446ms] [LOG] Adding LC modal... @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   41753ms] [WARNING] [TikTok Pixel] - Invalid Event Name Format
+Issue: 1 event name was rejected for not following TikTok format requirements.
+Suggestion: Go to your source code and update these event types according to TikTok format requirements. See https://ads.tiktok.com/help/article/custom-events?lang=en for more information. @ https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwMQ.js:0
+[   41887ms] [ERROR] Attestation check for Attribution Reporting on https://www.facebook.com failed. @ https://www.jaycar.co.nz/raspberry-pi-5-single-board-computer-8gb/p/XC9108?srsltid=AfmBOopm8ZRl-8uZVCa2QOGbt2HfgjuYnFY3QNenoB5klGxk1-R_sVnW:0
+[   41969ms] [ERROR] Attestation check for Attribution Reporting on https://www.facebook.com failed. @ https://www.jaycar.co.nz/raspberry-pi-5-single-board-computer-8gb/p/XC9108?srsltid=AfmBOopm8ZRl-8uZVCa2QOGbt2HfgjuYnFY3QNenoB5klGxk1-R_sVnW:0
+[   42446ms] [INFO] retry: 300 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42446ms] [INFO] render() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42446ms] [INFO] renderProductBanner() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42446ms] [INFO] price breakdown not rendered as price is under $600 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42446ms] [LOG] Adding LC modal... @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42747ms] [INFO] retry: 800 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42747ms] [INFO] render() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42747ms] [INFO] renderProductBanner() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42747ms] [INFO] price breakdown not rendered as price is under $600 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   42747ms] [LOG] Adding LC modal... @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   43547ms] [INFO] retry: 1500 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   43547ms] [INFO] render() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   43547ms] [INFO] renderProductBanner() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   43547ms] [INFO] price breakdown not rendered as price is under $600 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   43548ms] [LOG] Adding LC modal... @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   44043ms] [WARNING] [TikTok Pixel] - Invalid Event Name Format
+Issue: 1 event name was rejected for not following TikTok format requirements.
+Suggestion: Go to your source code and update these event types according to TikTok format requirements. See https://ads.tiktok.com/help/article/custom-events?lang=en for more information. @ https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwMQ.js:0
+[   45048ms] [INFO] retry: 1700 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   45048ms] [INFO] render() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   45048ms] [INFO] renderProductBanner() init @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   45048ms] [INFO] price breakdown not rendered as price is under $600 @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   45048ms] [LOG] Adding LC modal... @ https://checkout.latitudefinancial.com/assets/content.js?platform=direct&merchantId=test-testaudirect:0
+[   64370ms] [WARNING] undefined @ https://www.jaycar.co.nz/_next/static/chunks/pages/_app-0628a80d53da7363.js:15
+[   71335ms] [ERROR] Failed to load resource: net::ERR_TIMED_OUT @ https://hbiq.net/iq-pixel.js:0
+[   71352ms] [WARNING] [TikTok Pixel] - Invalid Event Name Format
+Issue: 1 event name was rejected for not following TikTok format requirements.
+Suggestion: Go to your source code and update these event types according to TikTok format requirements. See https://ads.tiktok.com/help/article/custom-events?lang=en for more information. @ https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwMQ.js:0
+[   71592ms] [WARNING] No available adapters. @ https://www.jaycar.co.nz/raspberry-pi-5-single-board-computer-8gb/p/XC9108?srsltid=AfmBOopm8ZRl-8uZVCa2QOGbt2HfgjuYnFY3QNenoB5klGxk1-R_sVnW:0
+[   71815ms] [LOG] cbar_CP_start @ https://cloudfront.barilliance.com/jaycar.co.nz/cbar.js.php:239
+[   72044ms] [WARNING] [TikTok Pixel] - Invalid Event Name Format
+Issue: 1 event name was rejected for not following TikTok format requirements.
+Suggestion: Go to your source code and update these event types according to TikTok format requirements. See https://ads.tiktok.com/help/article/custom-events?lang=en for more information. @ https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwMQ.js:0
+[   94508ms] [WARNING] [TikTok Pixel] - Invalid Event Name Format
+Issue: 1 event name was rejected for not following TikTok format requirements.
+Suggestion: Go to your source code and update these event types according to TikTok format requirements. See https://ads.tiktok.com/help/article/custom-events?lang=en for more information. @ https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwMQ.js:0
+[  108685ms] [WARNING] [TikTok Pixel] - Invalid Event Name Format
+Issue: 1 event name was rejected for not following TikTok format requirements.
+Suggestion: Go to your source code and update these event types according to TikTok format requirements. See https://ads.tiktok.com/help/article/custom-events?lang=en for more information. @ https://analytics.tiktok.com/i18n/pixel/static/main.MWE0ZWQ3ZWQwMQ.js:0
+[  121981ms] [LOG] cbar_CP_start @ https://cloudfront.barilliance.com/jaycar.co.nz/cbar.js.php:239
+[  122518ms] [LOG] cbar_CP_start @ https://cloudfront.barilliance.com/jaycar.co.nz/cbar.js.php:239
+[  133673ms] [ERROR] TypeError: Cannot read properties of null (reading 'sendMessage')
+    at zs.sendMessage (https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:448:462)
+    at zs.af (https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:458:230)
+    at X.K (https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:516:445)
+    at https://www.google.com/xjs/_/js/k=xjs.s.en_GB.NL8RhMzUa9w.2019.O/ck=xjs.s.OafYr9ui2CI.L.B1.O/am=AAACAAAIAgAAAAAAAAAAAIAAAIQAAAAAAAAAAAAAAAAAAAAEAAEAAAEAAAAAAAAIAAAAAAAAAAAAAACAAAAAgCAAAgBQAgACEIAIQAAAJgAAAAAAAACg0AcQAKABAAAAAADwAGAAQgQAAAAAAAAAEAgQgAAAIAEAAAAAAAAEAAAAABAAAAAAAgAAAIABgAAAgAAiQQAAACgUAAAQAAAAAAEAAAAAAAAAAAAIIgAAACCBBAAA_7ZvwAMAAQAAAAAAAABAAAAAAABAAABgQJIGAAAAAAAAQBixAAAAAKEwAAAIAAgCIAAAAAAAAARIgAAAAgaAAAAABAAAAAAAAAAAQACAIIBCAAgACkBAAACAADgAAAAAAAAAAAABAQAAAAAAIIAAAAICEAIIAAAAAAAEAIACBAAAAMgBAAAAAABAQAQAAhAAAEaQAQBIBABABACAAAIYAACEAgAAgIIACfwAAAgAAAAAAACAEwAAAACBAAAAQALgiwgjAAAIAAAAAIAcAB4P4BBBAQAAAAAAAAAAAAAAAAAAAAAAACAACmAcSH5BAAQAAAAAAAAAAAAAAAAAAAAAAAAAAABIETYFAAAAAADYGgAQ/d=0/dg=0/br=1/ujg=1/rs=ACT90oEOD3NPeMY2RgODl2qF56GUjDTHkQ/cb=loaded_h_0/m=sy94,sy93,byfTOb,lsjVmc,LEikZe,sy91,kWgXee,ovKuLd,sgY6Zb,qafBPd,ebZ3mb,dowIGb,sy6cq,sy3c5,DpX64d,uKlGbf,sy6cr,EufiNb,sy64z,syu1,sytu,sytk,sytp,syuo,XCToU,sy1kd,gHhSjd,sy1kn,uUzMF,kN1Sic,sy1kq,Zby8rf,sy9tx,sy5re,zmptHf,EgWzsb,sy303,YHnUBc,sy3g6,w4UyN,syvb,sytb,syrs,Mbif2,ipWLfe,syve,QVaUhf,sy1nv,sy1nu,sy1nt,sy1nr,sy1ns,SJpD2c,eAR4Hf,sy6d9,nN2e1e,kQvlef,sy35o,WlNQGd,sy1sn,syxw,sy1tj,Tia57b,KpRAue,X8jtef,sy6da,OXpAmf,sy5uv,sy34f,sy117,syx0,sywq,sy11d,sy11b,sy11f,sy5uu,nRwWne,sy4aa,sy4a3,sy49x,sy49w,sy49v,UHgVpe,sy1sr,sy1sy,sy1t2,sy1tl,NyeqM,sy8uw,sy8uu,sy8ut,sy78n,syxc,syxh,O63OXd,syj6,aLUfP,wQlYve,sy3g7,sy2ma,syyr,syys,syyn,syyt,syym,syyu,syyc,syyb,syya,syyd,syyv,syyw,syy5,eZ9XOd,syte,sytd,sytf,L1AAkb,sy14f,sy14g,YjTCDb,sy14d,sy14e,q00IXe,syj1,sy143,BYwJlf,syxu,syxv,rtH1bd,PGyklf,sy14l,syxz,sy14k,sy14j,sy14h,sy146,sy14o,Fh0l0,sy1k5,sy1k6,pzkXnb,sy16e,sy142,FRLJrd,sy1k8,sy1k9,eBYPP,sy6bw,HYSCof,sy6dm,sHZ92c,VEbNoe,sy9v0,sy76p,sy1st,KSk4yc,sy15t,sy1jy,sy1jx,sy1jv,sy1ig,sy1aw,sy1as,sy1an,syge,sy1ar,sy1ju,sy1ae,sy1ad,M8IzD,sy1lx,Ss2xfd,sy1ll,hge14e,sy1m1,sy1m0,syyl,Zjgvvd,syy1,syy2,IiC5yd,syyk,syyi,syyh,syy8,symu,sym8,syla,sywz,sywx,syii,pgCXqb,sy1lu,sy1lt,gxB9Xc,sy1ma,sy1m9,gWrpJd,sy1mj?cb=121509377&xjs=s3:284:462
+    at https://www.google.com/xjs/_/js/k=xjs.s.en_GB.NL8RhMzUa9w.2019.O/ck=xjs.s.OafYr9ui2CI.L.B1.O/am=AAACAAAIAgAAAAAAAAAAAIAAAIQAAAAAAAAAAAAAAAAAAAAEAAEAAAEAAAAAAAAIAAAAAAAAAAAAAACAAAAAgCAAAgBQAgACEIAIQAAAJgAAAAAAAACg0AcQAKABAAAAAADwAGAAQgQAAAAAAAAAEAgQgAAAIAEAAAAAAAAEAAAAABAAAAAAAgAAAIABgAAAgAAiQQAAACgUAAAQAAAAAAEAAAAAAAAAAAAIIgAAACCBBAAA_7ZvwAMAAQAAAAAAAABAAAAAAABAAABgQJIGAAAAAAAAQBixAAAAAKEwAAAIAAgCIAAAAAAAAARIgAAAAgaAAAAABAAAAAAAAAAAQACAIIBCAAgACkBAAACAADgAAAAAAAAAAAABAQAAAAAAIIAAAAICEAIIAAAAAAAEAIACBAAAAMgBAAAAAABAQAQAAhAAAEaQAQBIBABABACAAAIYAACEAgAAgIIACfwAAAgAAAAAAACAEwAAAACBAAAAQALgiwgjAAAIAAAAAIAcAB4P4BBBAQAAAAAAAAAAAAAAAAAAAAAAACAACmAcSH5BAAQAAAAAAAAAAAAAAAAAAAAAAAAAAABIETYFAAAAAADYGgAQ/d=0/dg=0/br=1/ujg=1/rs=ACT90oEOD3NPeMY2RgODl2qF56GUjDTHkQ/cb=loaded_h_0/m=sy94,sy93,byfTOb,lsjVmc,LEikZe,sy91,kWgXee,ovKuLd,sgY6Zb,qafBPd,ebZ3mb,dowIGb,sy6cq,sy3c5,DpX64d,uKlGbf,sy6cr,EufiNb,sy64z,syu1,sytu,sytk,sytp,syuo,XCToU,sy1kd,gHhSjd,sy1kn,uUzMF,kN1Sic,sy1kq,Zby8rf,sy9tx,sy5re,zmptHf,EgWzsb,sy303,YHnUBc,sy3g6,w4UyN,syvb,sytb,syrs,Mbif2,ipWLfe,syve,QVaUhf,sy1nv,sy1nu,sy1nt,sy1nr,sy1ns,SJpD2c,eAR4Hf,sy6d9,nN2e1e,kQvlef,sy35o,WlNQGd,sy1sn,syxw,sy1tj,Tia57b,KpRAue,X8jtef,sy6da,OXpAmf,sy5uv,sy34f,sy117,syx0,sywq,sy11d,sy11b,sy11f,sy5uu,nRwWne,sy4aa,sy4a3,sy49x,sy49w,sy49v,UHgVpe,sy1sr,sy1sy,sy1t2,sy1tl,NyeqM,sy8uw,sy8uu,sy8ut,sy78n,syxc,syxh,O63OXd,syj6,aLUfP,wQlYve,sy3g7,sy2ma,syyr,syys,syyn,syyt,syym,syyu,syyc,syyb,syya,syyd,syyv,syyw,syy5,eZ9XOd,syte,sytd,sytf,L1AAkb,sy14f,sy14g,YjTCDb,sy14d,sy14e,q00IXe,syj1,sy143,BYwJlf,syxu,syxv,rtH1bd,PGyklf,sy14l,syxz,sy14k,sy14j,sy14h,sy146,sy14o,Fh0l0,sy1k5,sy1k6,pzkXnb,sy16e,sy142,FRLJrd,sy1k8,sy1k9,eBYPP,sy6bw,HYSCof,sy6dm,sHZ92c,VEbNoe,sy9v0,sy76p,sy1st,KSk4yc,sy15t,sy1jy,sy1jx,sy1jv,sy1ig,sy1aw,sy1as,sy1an,syge,sy1ar,sy1ju,sy1ae,sy1ad,M8IzD,sy1lx,Ss2xfd,sy1ll,hge14e,sy1m1,sy1m0,syyl,Zjgvvd,syy1,syy2,IiC5yd,syyk,syyi,syyh,syy8,symu,sym8,syla,sywz,sywx,syii,pgCXqb,sy1lu,sy1lt,gxB9Xc,sy1ma,sy1m9,gWrpJd,sy1mj?cb=121509377&xjs=s3:266:1499
+    at Object.v (https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:129:285)
+    at Array.forEach (<anonymous>)
+    at Object.Sd (https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:70:879)
+    at Jh (https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:128:664)
+    at Object.then (https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:129:99) @ https://www.gstatic.com/og/_/js/k=og.asy.en_US.d1h1rKpLlxs.2019.O/rt=j/m=_ac,_awd,ada,lldp,qads/exm=/d=1/ed=1/rs=AA2YrTvBxKuiH1HaMdgFH1UmOzRW-rS9_A:127

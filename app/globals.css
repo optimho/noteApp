@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TipTap Task List Styling - force inline layout */
+.ProseMirror ul[data-type="taskList"] {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  display: grid !important;
+  grid-template-columns: repeat(3, 1fr) !important;
+  gap: 0.25rem !important;
+  column-gap: 0.5rem !important;
+}
+
+/* Responsive: 2 columns on mobile */
+@media (max-width: 640px) {
+  .ProseMirror ul[data-type="taskList"] {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+.ProseMirror ul[data-type="taskList"] > li {
+  display: block !important;
+  margin: 0.25rem 0 !important;
+}
+
+/* Target li elements with data-checked attribute (actual structure) */
+.ProseMirror ul[data-type="taskList"] > li[data-checked] * {
+  display: inline !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.ProseMirror ul[data-type="taskList"] > li[data-checked] > label {
+  margin-right: 0.5rem !important;
+}
+
+.ProseMirror ul[data-type="taskList"] > li[data-checked] > label > input[type="checkbox"] {
+  cursor: pointer !important;
+  vertical-align: middle !important;
+  margin-right: 0.25rem !important;
+}
+
+.ProseMirror ul[data-type="taskList"] > li[data-checked] > label > span {
+  display: none !important;
+}

@@ -1,0 +1,22 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Log in" [ref=e79] [cursor=pointer]:
+          - /url: /login
+        - link "Sign up" [ref=e80] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e7]:
+    - generic [ref=e81]:
+      - heading "NoteApp" [level=1] [ref=e82]
+      - paragraph [ref=e83]: A minimal rich-text note taking app. Create, edit, and share notes with formatting.
+      - generic [ref=e84]:
+        - link "Log in" [ref=e85] [cursor=pointer]:
+          - /url: /login
+        - link "Sign up" [ref=e86] [cursor=pointer]:
+          - /url: /register
+  - button "Open Next.js Dev Tools" [ref=e57] [cursor=pointer]:
+    - img [ref=e58]
+  - alert [ref=e61]

@@ -1,0 +1,29 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Dashboard" [ref=e39] [cursor=pointer]:
+          - /url: /dashboard
+        - generic [ref=e40]: Test User
+        - button "Log out" [ref=e41] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e42]:
+      - generic [ref=e43]:
+        - generic [ref=e44]:
+          - heading "My Notes" [level=1] [ref=e45]
+          - button "New Note" [ref=e47] [cursor=pointer]
+        - paragraph [ref=e48]: No notes yet. Create your first one!
+      - generic [ref=e49]:
+        - heading "Public Notes" [level=2] [ref=e50]
+        - link "Shopping List 3/16/2026 Collaborative" [ref=e52] [cursor=pointer]:
+          - /url: /p/L3v8IpBdBNQFHCtt
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - heading "Shopping List" [level=3] [ref=e55]
+              - paragraph [ref=e56]: 3/16/2026
+            - generic [ref=e57]: Collaborative
+  - button "Open Next.js Dev Tools" [ref=e20] [cursor=pointer]:
+    - img [ref=e21]
+  - alert [ref=e14]

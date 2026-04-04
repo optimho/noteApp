@@ -1,0 +1,27 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Log in" [ref=e5] [cursor=pointer]:
+          - /url: /login
+        - link "Sign up" [ref=e6] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - generic [ref=e10]:
+          - heading "My Notes" [level=1] [ref=e11]
+          - button "New Note" [ref=e13] [cursor=pointer]
+        - paragraph [ref=e14]: No notes yet. Create your first one!
+      - generic [ref=e15]:
+        - heading "Public Notes" [level=2] [ref=e16]
+        - link "Shopping List 3/16/2026 Collaborative" [ref=e18] [cursor=pointer]:
+          - /url: /p/L3v8IpBdBNQFHCtt
+          - generic [ref=e19]:
+            - generic [ref=e20]:
+              - heading "Shopping List" [level=3] [ref=e21]
+              - paragraph [ref=e22]: 3/16/2026
+            - generic [ref=e23]: Collaborative
+  - alert [ref=e24]

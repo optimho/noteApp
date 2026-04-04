@@ -1,0 +1,15 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Dashboard" [ref=e5] [cursor=pointer]:
+          - /url: /dashboard
+        - generic [ref=e6]: Test User
+        - button "Log out" [ref=e7] [cursor=pointer]
+  - main [ref=e8]:
+    - generic [ref=e10]:
+      - heading "404" [level=1] [ref=e11]
+      - heading "This page could not be found." [level=2] [ref=e13]
+  - alert [ref=e14]
