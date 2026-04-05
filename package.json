@@ -17,6 +17,7 @@
     "@tiptap/pm": "^3.20.2",
     "@tiptap/react": "^3.20.2",
     "@tiptap/starter-kit": "^3.20.2",
+    "@zxing/browser": "^0.1.5",
     "better-auth": "^1.5.5",
     "nanoid": "^5.0.9",
     "next": "^15.2.3",

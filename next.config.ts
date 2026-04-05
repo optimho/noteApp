@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   serverExternalPackages: ["bun:sqlite"],
+  experimental: {
+    staleTimes: {
+      dynamic: 0,
+    },
+  },
   webpack: (config, { isServer }) => {
     if (isServer) {
       config.externals = [

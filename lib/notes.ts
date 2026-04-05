@@ -1,5 +1,7 @@
 import { query, get, run } from "./db";
 import { nanoid } from "nanoid";
+import { rmSync } from "node:fs";
+import path from "node:path";
 
 export type Note = {
   id: string;
@@ -102,6 +104,8 @@ export async function updateNote(
 
 export async function deleteNote(userId: string, noteId: string): Promise<void> {
   await run("DELETE FROM notes WHERE id = ? AND user_id = ?", [noteId, userId]);
+  const uploadDir = path.join(process.cwd(), "public", "uploads", "notes", noteId);
+  try { rmSync(uploadDir, { recursive: true, force: true }); } catch { /* ok if missing */ }
 }
 
 export async function setNotePublic(
@@ -179,6 +183,100 @@ export async function updateCollaborativeNote(
 
   const row = await get<NoteRow>("SELECT * FROM notes WHERE id = ?", [noteId]);
   return toNote(row!);
+}
+
+export type NoteScan = {
+  id: string;
+  noteId: string;
+  rawValue: string;
+  format: string;
+  createdAt: string;
+};
+
+type NoteScanRow = {
+  id: string;
+  note_id: string;
+  raw_value: string;
+  format: string;
+  created_at: string;
+};
+
+function toNoteScan(row: NoteScanRow): NoteScan {
+  return { id: row.id, noteId: row.note_id, rawValue: row.raw_value, format: row.format, createdAt: row.created_at };
+}
+
+export async function addNoteScan(noteId: string, rawValue: string, format: string): Promise<NoteScan> {
+  const id = nanoid();
+  await run(
+    "INSERT INTO note_scans (id, note_id, raw_value, format) VALUES (?, ?, ?, ?)",
+    [id, noteId, rawValue, format]
+  );
+  const row = await get<NoteScanRow>("SELECT * FROM note_scans WHERE id = ?", [id]);
+  return toNoteScan(row!);
+}
+
+export async function getScansByNoteId(noteId: string): Promise<NoteScan[]> {
+  const rows = await query<NoteScanRow>(
+    "SELECT * FROM note_scans WHERE note_id = ? ORDER BY created_at DESC",
+    [noteId]
+  );
+  return rows.map(toNoteScan);
+}
+
+export async function deleteNoteScan(scanId: string, noteId: string): Promise<boolean> {
+  const row = await get<NoteScanRow>(
+    "SELECT id FROM note_scans WHERE id = ? AND note_id = ?",
+    [scanId, noteId]
+  );
+  if (!row) return false;
+  await run("DELETE FROM note_scans WHERE id = ?", [scanId]);
+  return true;
+}
+
+export type NotePhoto = {
+  id: string;
+  noteId: string;
+  filename: string;
+  createdAt: string;
+};
+
+type NotePhotoRow = {
+  id: string;
+  note_id: string;
+  filename: string;
+  created_at: string;
+};
+
+function toNotePhoto(row: NotePhotoRow): NotePhoto {
+  return { id: row.id, noteId: row.note_id, filename: row.filename, createdAt: row.created_at };
+}
+
+export async function addNotePhoto(noteId: string, filename: string): Promise<NotePhoto> {
+  const id = nanoid();
+  await run(
+    "INSERT INTO note_photos (id, note_id, filename) VALUES (?, ?, ?)",
+    [id, noteId, filename]
+  );
+  const row = await get<NotePhotoRow>("SELECT * FROM note_photos WHERE id = ?", [id]);
+  return toNotePhoto(row!);
+}
+
+export async function getPhotosByNoteId(noteId: string): Promise<NotePhoto[]> {
+  const rows = await query<NotePhotoRow>(
+    "SELECT * FROM note_photos WHERE note_id = ? ORDER BY created_at ASC",
+    [noteId]
+  );
+  return rows.map(toNotePhoto);
+}
+
+export async function deleteNotePhoto(photoId: string, noteId: string): Promise<string | null> {
+  const row = await get<NotePhotoRow>(
+    "SELECT * FROM note_photos WHERE id = ? AND note_id = ?",
+    [photoId, noteId]
+  );
+  if (!row) return null;
+  await run("DELETE FROM note_photos WHERE id = ?", [photoId]);
+  return row.filename;
 }
 
 export async function setNoteCollaborative(

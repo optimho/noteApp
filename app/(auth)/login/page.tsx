@@ -11,22 +11,23 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState(false);
+  const [rateLimited, setRateLimited] = useState(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
+    if (rateLimited) return;
     setError(null);
     setLoading(true);
 
-    console.log("[CLIENT] Login started at", new Date().toISOString());
-    const start = performance.now();
-
     const result = await signIn.email({ email, password, callbackURL: "/dashboard" });
 
-    const duration = performance.now() - start;
-    console.log(`[CLIENT] Login completed in ${duration.toFixed(0)}ms`);
-
     if (result.error) {
-      setError(result.error.message ?? "Login failed");
+      if (result.error.status === 429) {
+        setRateLimited(true);
+        setError("Too many attempts. Please try again in 15 minutes.");
+      } else {
+        setError(result.error.message ?? "Login failed");
+      }
       setLoading(false);
     } else {
       router.push("/dashboard");
@@ -66,7 +67,7 @@ export default function LoginPage() {
         {error && <p className="text-red-600 text-sm">{error}</p>}
         <button
           type="submit"
-          disabled={loading}
+          disabled={loading || rateLimited}
           className="px-4 py-2 bg-neutral-900 text-white rounded-md hover:bg-neutral-700 disabled:opacity-50 transition-colors"
         >
           {loading ? "Logging in…" : "Log in"}

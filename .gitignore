@@ -36,6 +36,9 @@ data/*.db
 data/*.db-wal
 data/*.db-shm
 
+# User uploaded photos
+public/uploads/
+
 # IntelliJ based IDEs
 .idea
 

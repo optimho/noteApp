@@ -7,14 +7,21 @@ import CodeBlock from "@tiptap/extension-code-block";
 import TaskList from "@tiptap/extension-task-list";
 import TaskItem from "@tiptap/extension-task-item";
 import Toolbar from "./Toolbar";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useImperativeHandle, forwardRef } from "react";
+
+export type NoteEditorHandle = {
+  insertText: (text: string) => void;
+};
 
 type Props = {
   initialContent: string;
   onChangeAction: (json: unknown) => void;
 };
 
-export default function NoteEditor({ initialContent, onChangeAction }: Props) {
+const NoteEditor = forwardRef<NoteEditorHandle, Props>(function NoteEditor(
+  { initialContent, onChangeAction },
+  ref
+) {
   const onChangeRef = useRef(onChangeAction);
   onChangeRef.current = onChangeAction;
 
@@ -31,7 +38,7 @@ export default function NoteEditor({ initialContent, onChangeAction }: Props) {
       TaskItem.configure({
         nested: true,
         HTMLAttributes: {
-          class: 'task-item-flex',
+          class: "task-item-flex",
         },
       }),
     ],
@@ -43,10 +50,24 @@ export default function NoteEditor({ initialContent, onChangeAction }: Props) {
     immediatelyRender: false,
     editorProps: {
       attributes: {
-        class: 'prose-task-lists',
+        class: "prose-task-lists",
       },
     },
   } as any);
+
+  useImperativeHandle(ref, () => ({
+    insertText(text: string) {
+      if (!editor) return;
+      editor
+        .chain()
+        .focus()
+        .insertContentAt(editor.state.doc.content.size, {
+          type: "paragraph",
+          content: [{ type: "text", text }],
+        })
+        .run();
+    },
+  }));
 
   useEffect(() => {
     return () => {
@@ -63,4 +84,6 @@ export default function NoteEditor({ initialContent, onChangeAction }: Props) {
       />
     </div>
   );
-}
+});
+
+export default NoteEditor;

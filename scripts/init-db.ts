@@ -82,5 +82,32 @@ CREATE INDEX IF NOT EXISTS idx_notes_public_slug ON notes(public_slug);
 CREATE INDEX IF NOT EXISTS idx_notes_is_public ON notes(is_public);
 `);
 
+// Note scans table
+db.run(`
+CREATE TABLE IF NOT EXISTS note_scans (
+  id TEXT PRIMARY KEY,
+  note_id TEXT NOT NULL,
+  raw_value TEXT NOT NULL,
+  format TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  FOREIGN KEY (note_id) REFERENCES notes(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_note_scans_note_id ON note_scans(note_id);
+`);
+
+// Note photos table
+db.run(`
+CREATE TABLE IF NOT EXISTS note_photos (
+  id TEXT PRIMARY KEY,
+  note_id TEXT NOT NULL,
+  filename TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT (datetime('now')),
+  FOREIGN KEY (note_id) REFERENCES notes(id) ON DELETE CASCADE
+);
+
+CREATE INDEX IF NOT EXISTS idx_note_photos_note_id ON note_photos(note_id);
+`);
+
 db.close();
 console.log("Database initialized at", path.join(DATA_DIR, "app.db"));

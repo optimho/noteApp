@@ -1,10 +1,11 @@
 export const dynamic = "force-dynamic";
 
-import { getNoteByPublicSlug } from "@/lib/notes";
+import { getNoteByPublicSlug, getPhotosByNoteId } from "@/lib/notes";
 import { auth } from "@/lib/auth";
 import { headers } from "next/headers";
 import { notFound } from "next/navigation";
 import PublicNoteViewer from "@/components/PublicNoteViewer";
+import PublicNoteEditor from "@/components/PublicNoteEditor";
 import Link from "next/link";
 
 export default async function PublicNotePage({
@@ -15,6 +16,8 @@ export default async function PublicNotePage({
   const { slug } = await params;
   const note = await getNoteByPublicSlug(slug);
   if (!note) notFound();
+
+  const photos = await getPhotosByNoteId(note.id);
 
   const session = await auth.api.getSession({ headers: await headers() });
   const canEdit = session && (note.isCollaborative || note.userId === session.user.id);
@@ -39,7 +42,25 @@ export default async function PublicNotePage({
           </p>
         </div>
       )}
-      <PublicNoteViewer contentJson={note.contentJson} />
+      {note.isCollaborative ? (
+        <PublicNoteEditor contentJson={note.contentJson} slug={slug} />
+      ) : (
+        <PublicNoteViewer contentJson={note.contentJson} />
+      )}
+
+      {photos.length > 0 && (
+        <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 gap-2">
+          {photos.map((photo) => (
+            <a key={photo.id} href={`/api/uploads/${note.id}/${photo.filename}`} target="_blank" rel="noreferrer">
+              <img
+                src={`/api/uploads/${note.id}/${photo.filename}`}
+                alt=""
+                className="w-full aspect-square object-cover rounded-lg border"
+              />
+            </a>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
