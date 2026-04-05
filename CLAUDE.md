@@ -1,7 +1,8 @@
 #claude.md
 
-We are using the app using the app described in the @spec.md file.
-Read that file for general architectural tasks or the double check the exact database structure, tech stack or application architecture.
+We are using the app described in the @spec.md file.
+Read @retrospect.md for the full stack reference, lessons learned, deployment workflow, and design patterns.
+Read @spec.md to check the exact database structure, tech stack, or application architecture.
 
 keep your replies short and concise.
 
