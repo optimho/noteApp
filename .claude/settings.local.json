@@ -10,7 +10,10 @@
       "mcp__plugin_playwright_playwright__browser_tabs",
       "mcp__plugin_playwright_playwright__browser_fill_form",
       "Bash(nmap:*)",
-      "Bash(ip route:*)"
+      "Bash(ip route:*)",
+      "Bash(cat scripts/*)",
+      "Bash(sort -t: -k2 -rn)",
+      "Bash(grep:*)"
     ]
   }
 }
