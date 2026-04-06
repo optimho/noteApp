@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-blue-50 text-neutral-900" suppressHydrationWarning>
+      <body className="min-h-screen bg-purple-50 text-neutral-900" suppressHydrationWarning>
         <Header />
         <main className="max-w-4xl mx-auto px-4 pt-4 pb-8">{children}</main>
       </body>
