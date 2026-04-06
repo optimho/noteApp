@@ -1,0 +1,43 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Dashboard" [ref=e5] [cursor=pointer]:
+          - /url: /dashboard
+        - generic [ref=e6]: Michael
+        - button "Log out" [ref=e7] [cursor=pointer]
+  - main [ref=e8]:
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - textbox [ref=e68]: Playwright Test Note
+        - generic [ref=e69]:
+          - generic [ref=e70]: Saved
+          - button "Back to Dashboard" [ref=e71] [cursor=pointer]
+          - button "Delete" [ref=e72] [cursor=pointer]
+      - generic [ref=e74] [cursor=pointer]:
+        - switch [ref=e75]
+        - generic [ref=e77]: Private
+      - generic [ref=e79]:
+        - generic [ref=e80]:
+          - button "B" [ref=e81] [cursor=pointer]
+          - button "I" [ref=e82] [cursor=pointer]
+          - button "H1" [ref=e83] [cursor=pointer]
+          - button "H2" [ref=e84] [cursor=pointer]
+          - button "H3" [ref=e85] [cursor=pointer]
+          - button "P" [ref=e86] [cursor=pointer]
+          - button "• List" [ref=e87] [cursor=pointer]
+          - button "☑ Tasks" [ref=e88] [cursor=pointer]
+          - 'button "`Code`" [ref=e89] [cursor=pointer]'
+          - 'button "```" [ref=e90] [cursor=pointer]'
+          - button "─" [ref=e91] [cursor=pointer]
+        - paragraph [ref=e94]: This is a test note created by Playwright.
+      - generic [ref=e95]:
+        - button "📷 Add Photo" [ref=e97] [cursor=pointer]:
+          - generic [ref=e98]: 📷
+          - text: Add Photo
+        - button "⬛ Scan Code" [ref=e99] [cursor=pointer]:
+          - generic [ref=e100]: ⬛
+          - text: Scan Code
+  - alert [ref=e49]

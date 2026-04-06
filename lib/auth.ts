@@ -34,6 +34,10 @@ function getAuth() {
           },
         },
       },
+      session: {
+        expiresIn: 60 * 60 * 24 * 30, // 30 days
+        updateAge: 60 * 60 * 24,       // refresh expiry daily while active
+      },
       advanced: {
         useSecureCookies: process.env.BETTER_AUTH_URL?.startsWith("https") ?? false,
         cookiePrefix: "better-auth",

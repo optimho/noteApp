@@ -1,0 +1,72 @@
+- generic [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Dashboard" [ref=e5] [cursor=pointer]:
+          - /url: /dashboard
+        - generic [ref=e6]: Michael
+        - button "Log out" [ref=e7] [cursor=pointer]
+  - main [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]:
+        - generic [ref=e11]:
+          - heading "My Notes" [level=1] [ref=e12]
+          - generic [ref=e13]:
+            - button "New Note" [active] [ref=e14] [cursor=pointer]
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: Choose a template
+              - button "📝 Blank Note" [ref=e54] [cursor=pointer]:
+                - generic [ref=e55]: 📝
+                - generic [ref=e56]: Blank Note
+              - button "🛒 Shopping List" [ref=e57] [cursor=pointer]:
+                - generic [ref=e58]: 🛒
+                - generic [ref=e59]: Shopping List
+              - button "✅ To-Do List" [ref=e60] [cursor=pointer]:
+                - generic [ref=e61]: ✅
+                - generic [ref=e62]: To-Do List
+              - button "📋 Meeting Notes" [ref=e63] [cursor=pointer]:
+                - generic [ref=e64]: 📋
+                - generic [ref=e65]: Meeting Notes
+        - list [ref=e15]:
+          - listitem [ref=e16]:
+            - link "Shopping ListPublic 4/5/2026" [ref=e17] [cursor=pointer]:
+              - /url: /notes/cVoalYMzYSyS7d2T1Dnju
+              - generic [ref=e18]: Shopping ListPublic
+              - generic [ref=e19]: 4/5/2026
+          - listitem [ref=e20]:
+            - link "flash bank camera 4/5/2026" [ref=e21] [cursor=pointer]:
+              - /url: /notes/ZI3PpcrMaJVbQ4uImmt1I
+              - generic [ref=e22]: flash bank camera
+              - generic [ref=e23]: 4/5/2026
+          - listitem [ref=e24]:
+            - link "Test camera and barcodePublic 4/5/2026" [ref=e25] [cursor=pointer]:
+              - /url: /notes/DM53t8rzhYo0FrCdTt-4m
+              - generic [ref=e26]: Test camera and barcodePublic
+              - generic [ref=e27]: 4/5/2026
+      - generic [ref=e28]:
+        - heading "Public Notes" [level=2] [ref=e29]
+        - generic [ref=e30]:
+          - link "Shopping List 4/5/2026 Collaborative" [ref=e31] [cursor=pointer]:
+            - /url: /p/L3v8IpBdBNQFHCtt
+            - generic [ref=e32]:
+              - generic [ref=e33]:
+                - heading "Shopping List" [level=3] [ref=e34]
+                - paragraph [ref=e35]: 4/5/2026
+              - generic [ref=e36]: Collaborative
+          - link "Test camera and barcode 4/5/2026 Collaborative" [ref=e37] [cursor=pointer]:
+            - /url: /p/xqvFgCyvr04MTaX9
+            - generic [ref=e38]:
+              - generic [ref=e39]:
+                - heading "Test camera and barcode" [level=3] [ref=e40]
+                - paragraph [ref=e41]: 4/5/2026
+              - generic [ref=e42]: Collaborative
+          - link "Now what now? 4/5/2026 Collaborative" [ref=e43] [cursor=pointer]:
+            - /url: /p/GV9ysixUpwCZy7U6
+            - generic [ref=e44]:
+              - generic [ref=e45]:
+                - heading "Now what now?" [level=3] [ref=e46]
+                - paragraph [ref=e47]: 4/5/2026
+              - generic [ref=e48]: Collaborative
+  - alert [ref=e49]

@@ -35,7 +35,7 @@ export default function LoginPage() {
   }
 
   return (
-    <div className="max-w-sm mx-auto mt-16">
+    <div className="max-w-sm mx-auto">
       <h1 className="text-2xl font-bold mb-6">Log in</h1>
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">
         <div>

@@ -410,9 +410,12 @@ WantedBy=multi-user.target
 
 ### Deploy workflow
 ```bash
-# From dev machine
+# From dev machine — full sync
 rsync -av --exclude='.next' --exclude='node_modules' --exclude='.git' \
   ./noteApp/ shoppinglist@noteserver:/home/shoppinglist/noteapp/
+
+# Single file sync (e.g. one component change)
+rsync -av "./noteApp/components/NoteEditor.tsx" shoppinglist@noteserver:/home/shoppinglist/noteapp/components/
 
 # On Pi
 cd /home/shoppinglist/noteapp
@@ -481,6 +484,9 @@ Any new table must be added to `scripts/init-db.ts` and `init-db` must be re-run
 
 ### bcrypt cost on Pi
 The Pi's CPU is slow. Keep bcrypt cost at 8–10. Above 10 causes login/register to take several seconds.
+
+### TipTap editor height on mobile
+The default `min-h-[400px]` on `EditorContent` pushes the "Add Photo" / "Scan Code" buttons far off screen on mobile. Fix: wrap `EditorContent` in a div with `overflow-y-auto max-h-[50vh]` so the box is capped at half the viewport height and scrolls internally. Also add `onClick={() => editor?.commands.focus()}` and `cursor-text` to that wrapper so clicking empty space in the box focuses the editor — without this, users have to click exactly on existing text.
 
 ---
 

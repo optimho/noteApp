@@ -1,0 +1,2 @@
+[      24ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://shopping.chimp-pirarucu.ts.net/login?callbackUrl=%2Fdashboard:0
+[ 1159408ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://shopping.chimp-pirarucu.ts.net/login:0

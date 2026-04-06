@@ -1,0 +1,51 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Dashboard" [ref=e44] [cursor=pointer]:
+          - /url: /dashboard
+        - generic [ref=e45]: Michael
+        - button "Log out" [ref=e46] [cursor=pointer]
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - textbox [ref=e10]: Playwright Test Note
+        - generic [ref=e11]:
+          - generic [ref=e12]: Saved
+          - button "Back to Dashboard" [ref=e13] [cursor=pointer]
+          - button "Delete" [ref=e14] [cursor=pointer]
+      - generic [ref=e15]:
+        - generic [ref=e16] [cursor=pointer]:
+          - switch [checked] [ref=e17]
+          - generic [ref=e19]: Public
+        - generic [ref=e47]:
+          - link "https://shopping.chimp-pirarucu.ts.net/p/dSJaKWrJPQ0OCBV2" [ref=e48] [cursor=pointer]:
+            - /url: https://shopping.chimp-pirarucu.ts.net/p/dSJaKWrJPQ0OCBV2
+          - button "Copy" [ref=e49] [cursor=pointer]
+      - generic [ref=e51] [cursor=pointer]:
+        - switch [ref=e52]
+        - generic [ref=e54]: Private
+      - generic [ref=e21]:
+        - generic [ref=e22]:
+          - button "B" [ref=e23] [cursor=pointer]
+          - button "I" [ref=e24] [cursor=pointer]
+          - button "H1" [ref=e25] [cursor=pointer]
+          - button "H2" [ref=e26] [cursor=pointer]
+          - button "H3" [ref=e27] [cursor=pointer]
+          - button "P" [ref=e28] [cursor=pointer]
+          - button "• List" [ref=e29] [cursor=pointer]
+          - button "☑ Tasks" [ref=e30] [cursor=pointer]
+          - 'button "`Code`" [ref=e31] [cursor=pointer]'
+          - 'button "```" [ref=e32] [cursor=pointer]'
+          - button "─" [ref=e33] [cursor=pointer]
+        - paragraph [ref=e36]: This is a test note created by Playwright.
+      - generic [ref=e37]:
+        - button "📷 Add Photo" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: 📷
+          - text: Add Photo
+        - button "⬛ Scan Code" [ref=e41] [cursor=pointer]:
+          - generic [ref=e42]: ⬛
+          - text: Scan Code
+  - alert [ref=e43]

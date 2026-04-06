@@ -78,10 +78,15 @@ const NoteEditor = forwardRef<NoteEditorHandle, Props>(function NoteEditor(
   return (
     <div>
       <Toolbar editor={editor} />
-      <EditorContent
-        editor={editor}
-        className="prose max-w-none p-4 min-h-[400px] focus:outline-none [&_.ProseMirror]:outline-none [&_.ProseMirror_p]:my-0 [&_.ProseMirror_p]:leading-normal [&_.ProseMirror_ul]:my-1 [&_.ProseMirror_ol]:my-1 [&_.ProseMirror_li]:my-0"
-      />
+      <div
+        className="overflow-y-auto max-h-[50vh] cursor-text"
+        onClick={() => editor?.commands.focus()}
+      >
+        <EditorContent
+          editor={editor}
+          className="prose max-w-none p-4 min-h-[150px] focus:outline-none [&_.ProseMirror]:outline-none [&_.ProseMirror_p]:my-0 [&_.ProseMirror_p]:leading-normal [&_.ProseMirror_ul]:my-1 [&_.ProseMirror_ol]:my-1 [&_.ProseMirror_li]:my-0"
+        />
+      </div>
     </div>
   );
 });

@@ -1,0 +1,3 @@
+[     120ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://shopping.chimp-pirarucu.ts.net/favicon.ico:0
+[    7563ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://shopping.chimp-pirarucu.ts.net/login:0
+[  131997ms] [ERROR] Failed to load resource: the server responded with a status of 401 () @ https://shopping.chimp-pirarucu.ts.net/api/auth/sign-in/email:0

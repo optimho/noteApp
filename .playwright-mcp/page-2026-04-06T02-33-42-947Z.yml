@@ -1,0 +1,19 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link:
+        - /url: /
+      - navigation [ref=e4]:
+        - link "Log in" [ref=e5] [cursor=pointer]:
+          - /url: /login
+        - link "Sign up" [ref=e6] [cursor=pointer]:
+          - /url: /register
+  - main [ref=e7]:
+    - generic [ref=e8]:
+      - generic [ref=e9]:
+        - heading "Playwright Test Note" [level=1] [ref=e10]
+        - link "Edit Note" [ref=e11] [cursor=pointer]:
+          - /url: /notes/ye9VM53DhrBRZyIq6BfVj
+      - textbox [ref=e13]:
+        - paragraph [ref=e14]: This is a test note created by Playwright.
+  - alert [ref=e15]
